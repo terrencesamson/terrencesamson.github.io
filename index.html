@@ -1,344 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Terrence Samson | Portfolio</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap');
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        :root {
-            --bg: #101010;
-            --surface: #171717;
-            --text: #ededed;
-            --muted: #858585;
-            --accent: #c8ff5e;
-            --line: #303030;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'DM Sans', sans-serif;
-            line-height: 1.7;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: 88%;
-            max-width: 1050px;
-            margin: auto;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            height: 85px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .logo {
-            font-family: 'DM Mono', monospace;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-            font-size: 13px;
-            color: var(--muted);
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* HERO */
-
-        .hero {
-            padding: 130px 0 145px;
-        }
-
-        .eyebrow {
-            font-family: 'DM Mono', monospace;
-            font-size: 11px;
-            color: var(--accent);
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 8vw, 85px);
-            line-height: 1.08;
-            letter-spacing: -4px;
-            margin-bottom: 30px;
-        }
-
-        .hero h1 span {
-            color: var(--accent);
-        }
-
-        .hero p {
-            max-width: 590px;
-            color: var(--muted);
-            font-size: 16px;
-            margin-bottom: 35px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .primary-btn {
-            background: var(--accent);
-            color: #111;
-            padding: 12px 20px;
-            font-size: 13px;
-            font-weight: 700;
-            border-radius: 3px;
-            transition: .2s;
-        }
-
-        .primary-btn:hover {
-            background: white;
-            transform: translateY(-3px);
-        }
-
-        .secondary-btn {
-            font-size: 13px;
-            color: var(--muted);
-        }
-
-        .secondary-btn:hover {
-            color: var(--accent);
-        }
-
-        /* SECTION */
-
-        section {
-            padding: 85px 0;
-            border-top: 1px solid var(--line);
-        }
-
-        .section-number {
-            color: var(--accent);
-            font-family: 'DM Mono', monospace;
-            font-size: 12px;
-            margin-bottom: 10px;
-        }
-
-        .section-title {
-            font-size: 32px;
-            letter-spacing: -1px;
-            margin-bottom: 35px;
-        }
-
-        /* PROJECTS */
-
-        .project {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            padding: 25px 0;
-            border-bottom: 1px solid var(--line);
-            transition: .2s;
-        }
-
-        .project:hover {
-            padding-left: 12px;
-        }
-
-        .project h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .project p {
-            font-size: 13px;
-            color: var(--muted);
-        }
-
-        .project-tag {
-            font-family: 'DM Mono', monospace;
-            color: var(--accent);
-            font-size: 11px;
-            white-space: nowrap;
-        }
-
-        /* ABOUT */
-
-        .about-text {
-            max-width: 700px;
-            color: #aaa;
-            font-size: 15px;
-            margin-bottom: 35px;
-        }
-
-        .education {
-            background: var(--surface);
-            border: 1px solid var(--line);
-            padding: 25px;
-            margin-bottom: 30px;
-        }
-
-        .education small {
-            color: var(--accent);
-            font-family: 'DM Mono', monospace;
-            font-size: 10px;
-            letter-spacing: 1px;
-        }
-
-        .education h3 {
-            margin-top: 8px;
-            font-size: 18px;
-        }
-
-        .education p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        /* SKILLS */
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .skill-box {
-            padding: 20px;
-            background: var(--surface);
-            border: 1px solid var(--line);
-        }
-
-        .skill-box h3 {
-            font-family: 'DM Mono', monospace;
-            font-size: 11px;
-            color: var(--accent);
-            margin-bottom: 12px;
-        }
-
-        .skill-box p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        /* CONTACT */
-
-        .contact-text {
-            max-width: 550px;
-            color: var(--muted);
-            margin-bottom: 30px;
-        }
-
-        .contact-link {
-            display: inline-block;
-            color: var(--accent);
-            border-bottom: 1px solid var(--accent);
-            padding-bottom: 5px;
-            font-size: 15px;
-        }
-
-        .socials {
-            display: flex;
-            gap: 25px;
-            margin-top: 30px;
-            font-size: 13px;
-            color: var(--muted);
-        }
-
-        .socials a:hover {
-            color: var(--accent);
-        }
-
-        /* FOOTER */
-
-        footer {
-            padding: 30px 0;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-            font-family: 'DM Mono', monospace;
-            font-size: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 650px) {
-            .container {
-                width: 90%;
-            }
-
-            nav {
-                height: 70px;
-            }
-
-            .nav-links {
-                gap: 13px;
-                font-size: 11px;
-            }
-
-            .hero {
-                padding: 100px 0;
-            }
-
-            .hero h1 {
-                letter-spacing: -2px;
-            }
-
-            .skills {
-                grid-template-columns: 1fr;
-            }
-
-            .project {
-                align-items: flex-start;
-            }
-
-            .project-tag {
-                font-size: 9px;
-            }
-
-            footer {
-                gap: 15px;
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
     <div class="container">
+
         <nav>
-            <a href="#home" class="logo">terrence<span>.</span></a>
+            <a href="#home" class="logo">
+                terrence<span>.</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#work">Work</a></li>
@@ -346,13 +29,20 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </div>
+
 
     <!-- HERO SECTION -->
     <main>
+
         <div class="container">
+
             <div class="hero" id="home">
-                <div class="eyebrow">BS INFORMATION TECHNOLOGY</div>
+
+                <div class="eyebrow">
+                    BS INFORMATION TECHNOLOGY
+                </div>
 
                 <h1>
                     Terrence<br>
@@ -360,13 +50,15 @@
                 </h1>
 
                 <p>
-                    An Information Technology student exploring the
-                    world of programming, technology, and web design.
-                    Learning new things, building projects, and
-                    improving one line of code at a time.
+                    An Information Technology student exploring
+                    the world of programming, technology, and
+                    web design. Learning new things, building
+                    projects, and improving one line of code
+                    at a time.
                 </p>
 
                 <div class="hero-buttons">
+
                     <a href="#work" class="primary-btn">
                         Explore My Work ↗
                     </a>
@@ -374,57 +66,91 @@
                     <a href="#about" class="secondary-btn">
                         More About Me ↓
                     </a>
+
                 </div>
+
             </div>
+
         </div>
+
 
         <!-- WORK SECTION -->
         <section id="work">
+
             <div class="container">
-                <div class="section-number">01 / PORTFOLIO</div>
-                <h2 class="section-title">Selected Work</h2>
+
+                <div class="section-number">
+                    01 / PORTFOLIO
+                </div>
+
+                <h2 class="section-title">
+                    Selected Work
+                </h2>
 
                 <div class="project">
+
                     <div>
                         <h3>Java Matrix Operations</h3>
+
                         <p>
-                            A 2D array program that calculates row,
-                            column, and diagonal sums.
+                            A 2D array program that calculates
+                            row, column, and diagonal sums.
                         </p>
                     </div>
+
                     <span class="project-tag">JAVA</span>
+
                 </div>
 
+
                 <div class="project">
+
                     <div>
                         <h3>Java Programming Activities</h3>
+
                         <p>
-                            Practice exercises and academic projects
-                            focused on Java fundamentals.
+                            Practice exercises and academic
+                            projects focused on Java fundamentals.
                         </p>
                     </div>
+
                     <span class="project-tag">PROGRAMMING</span>
+
                 </div>
 
+
                 <div class="project">
+
                     <div>
                         <h3>Web Development Projects</h3>
+
                         <p>
                             Personal experiments and activities
                             using HTML, CSS, and JavaScript.
                         </p>
                     </div>
+
                     <span class="project-tag">WEB DESIGN</span>
+
                 </div>
 
             </div>
+
         </section>
+
 
         <!-- ABOUT SECTION -->
         <section id="about">
+
             <div class="container">
-                <div class="section-number">02 / INTRODUCTION</div>
-                <h2 class="section-title">About Me</h2>
+
+                <div class="section-number">
+                    02 / INTRODUCTION
+                </div>
+
+                <h2 class="section-title">
+                    About Me
+                </h2>
 
                 <p class="about-text">
                     Hello! I'm Terrence Ross E. Samson, an
@@ -437,38 +163,81 @@
                     that help me grow as a future IT professional.
                 </p>
 
+
+                <!-- EDUCATION -->
                 <div class="education">
+
                     <small>EDUCATION</small>
-                    <h3>Bachelor of Science in Information Technology</h3>
-                    <p>BSIT · CURRENTLY STUDYING</p>
+
+                    <h3>
+                        Bachelor of Science in Information Technology
+                    </h3>
+
+                    <p>
+                        BSIT · CURRENTLY STUDYING
+                    </p>
+
                 </div>
 
-                <h3 style="margin-bottom:20px;">My Toolkit</h3>
+
+                <!-- SKILLS -->
+                <h3 style="margin-bottom: 20px;">
+                    My Toolkit
+                </h3>
 
                 <div class="skills">
+
                     <div class="skill-box">
+
                         <h3>PROGRAMMING</h3>
-                        <p>Java, HTML, CSS, JavaScript</p>
+
+                        <p>
+                            Java, HTML, CSS, JavaScript
+                        </p>
+
                     </div>
 
+
                     <div class="skill-box">
+
                         <h3>TECHNOLOGY</h3>
-                        <p>Computer Fundamentals, Problem Solving</p>
+
+                        <p>
+                            Computer Fundamentals, Problem Solving
+                        </p>
+
                     </div>
 
+
                     <div class="skill-box">
+
                         <h3>CREATIVE</h3>
-                        <p>Design, Visual Creativity, Digital Tools</p>
+
+                        <p>
+                            Design, Visual Creativity, Digital Tools
+                        </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
 
         <!-- CONTACT SECTION -->
         <section id="contact">
+
             <div class="container">
-                <div class="section-number">03 / GET IN TOUCH</div>
-                <h2 class="section-title">Let's Connect.</h2>
+
+                <div class="section-number">
+                    03 / GET IN TOUCH
+                </div>
+
+                <h2 class="section-title">
+                    Let's Connect.
+                </h2>
 
                 <p class="contact-text">
                     Have a project idea, want to collaborate,
@@ -476,29 +245,62 @@
                     reach out. I'd be happy to hear from you.
                 </p>
 
-                <!-- Replace with your actual email -->
+
+                <!-- EMAIL -->
                 <a href="mailto:YOUR-EMAIL@example.com"
                    class="contact-link">
+
                     Send me an email ↗
+
                 </a>
 
+
+                <!-- SOCIAL MEDIA -->
                 <div class="socials">
-                    <!-- Replace these links with your accounts -->
-                    <a href="https://github.com/" target="_blank">GitHub ↗</a>
-                    <a href="https://instagram.com/" target="_blank">Instagram ↗</a>
-                    <a href="https://facebook.com/" target="_blank">Facebook ↗</a>
+
+                    <a href="https://github.com/"
+                       target="_blank">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://instagram.com/"
+                       target="_blank">
+                        Instagram ↗
+                    </a>
+
+                    <a href="https://facebook.com/"
+                       target="_blank">
+                        Facebook ↗
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
+
 
     <!-- FOOTER -->
     <div class="container">
+
         <footer>
+
             <span>© 2026 TERRENCE SAMSON</span>
-            <span>DESIGNED & BUILT WITH HTML + CSS</span>
+
+            <span>
+                DESIGNED & BUILT WITH HTML + CSS
+            </span>
+
         </footer>
+
     </div>
 
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
