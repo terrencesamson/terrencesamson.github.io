@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,13 @@
 
     <title>Terrence Samson | Portfolio</title>
 
-    <!-- External CSS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,33 +22,43 @@
 <body>
 
     <!-- NAVIGATION -->
-    <div class="container">
-
-        <nav>
-            <a href="#home" class="logo">
-                terrence<span>.</span>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-    </div>
-
-
-    <!-- HERO SECTION -->
-    <main>
-
+    <header>
         <div class="container">
 
-            <div class="hero" id="home">
+            <nav>
 
-                <div class="eyebrow">
-                    BS INFORMATION TECHNOLOGY
-                </div>
+                <a href="#home" class="logo">
+                    TS<span>.</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <span class="nav-label">
+                    PORTFOLIO 2026
+                </span>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+
+            <div class="hero-label">
+                <span class="status-dot"></span>
+                INFORMATION TECHNOLOGY STUDENT
+            </div>
+
+            <div class="hero-content">
 
                 <h1>
                     Terrence<br>
@@ -49,20 +66,18 @@
                 </h1>
 
                 <p>
-                    An Information Technology student exploring
-                    the world of programming, technology, and
-                    web design. Learning new things, building
-                    projects, and improving one line of code
-                    at a time.
+                    Exploring technology, developing ideas,
+                    and creating digital experiences through
+                    programming and web design.
                 </p>
 
                 <div class="hero-buttons">
 
                     <a href="#work" class="primary-btn">
-                        Explore My Work ↗
+                        Explore Projects <span>↗</span>
                     </a>
 
-                    <a href="#about" class="secondary-btn">
+                    <a href="#about" class="text-btn">
                         More About Me ↓
                     </a>
 
@@ -70,67 +85,152 @@
 
             </div>
 
-        </div>
+            <div class="hero-footer">
+
+                <span>BASED IN THE PHILIPPINES</span>
+
+                <span>LEARNING · BUILDING · GROWING</span>
+
+            </div>
+
+        </section>
 
 
-        <!-- WORK SECTION -->
-        <section id="work">
+        <!-- PROJECTS SECTION -->
+        <section class="section container" id="work">
 
-            <div class="container">
+            <div class="section-top">
 
-                <div class="section-number">
-                    01 / PORTFOLIO
+                <span class="section-label">
+                    01 / MY WORK
+                </span>
+
+                <span class="section-caption">
+                    ACADEMIC PROJECTS & ACTIVITIES
+                </span>
+
+            </div>
+
+            <h2 class="section-title">
+                Selected <span>Projects.</span>
+            </h2>
+
+            <p class="section-description">
+                A collection of my programming activities,
+                laboratory exercises, and academic outputs.
+            </p>
+
+
+            <!-- PROJECT CARDS -->
+            <div class="academic-projects">
+
+
+                <!-- MIDTERM -->
+                <div class="academic-card">
+
+                    <div class="card-top">
+                        <span>01</span>
+                        <span>ACADEMIC COLLECTION</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            FIRST COLLECTION
+                        </span>
+
+                        <h3>Midterm<br>Projects.</h3>
+
+                        <p>
+                            Programming activities, laboratory
+                            exercises, and submitted midterm tasks.
+                        </p>
+
+                        <a href="https://github.com/terrencesamson/JAVA-ITE102/tree/main/MIDTERM"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-button">
+
+                            View Midterm Projects <span>↗</span>
+
+                        </a>
+
+                    </div>
+
+                    <span class="card-decoration">01</span>
+
                 </div>
 
-                <h2 class="section-title">
-                    Selected Work
-                </h2>
 
-                <div class="project">
+                <!-- ENDTERM -->
+                <div class="academic-card">
 
+                    <div class="card-top">
+                        <span>02</span>
+                        <span>ACADEMIC COLLECTION</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            FINAL COLLECTION
+                        </span>
+
+                        <h3>Endterm<br>Projects.</h3>
+
+                        <p>
+                            Final programming activities,
+                            laboratory exercises, and academic outputs.
+                        </p>
+
+                        <a href="https://github.com/terrencesamson/JAVA-ITE102/tree/main/ENDTERM"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-button">
+
+                            View Endterm Projects <span>↗</span>
+
+                        </a>
+
+                    </div>
+
+                    <span class="card-decoration">02</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- OTHER PROJECTS -->
+            <div class="other-projects">
+
+                <div class="other-heading">
+                    <span>OTHER WORK</span>
+                    <span>03 / 05</span>
+                </div>
+
+                <div class="other-project">
                     <div>
                         <h3>Java Matrix Operations</h3>
-
-                        <p>
-                            A 2D array program that calculates
-                            row, column, and diagonal sums.
-                        </p>
+                        <p>2D arrays, row sums, column sums, and diagonal calculations.</p>
                     </div>
-
-                    <span class="project-tag">JAVA</span>
-
+                    <span>JAVA</span>
                 </div>
 
-
-                <div class="project">
-
+                <div class="other-project">
                     <div>
-                        <h3>Java Programming Activities</h3>
-
-                        <p>
-                            Practice exercises and academic
-                            projects focused on Java fundamentals.
-                        </p>
+                        <h3>Programming Activities</h3>
+                        <p>Practice exercises focused on Java programming fundamentals.</p>
                     </div>
-
-                    <span class="project-tag">PROGRAMMING</span>
-
+                    <span>CODING</span>
                 </div>
 
-
-                <div class="project">
-
+                <div class="other-project">
                     <div>
-                        <h3>Web Development Projects</h3>
-
-                        <p>
-                            Personal experiments and activities
-                            using HTML, CSS, and JavaScript.
-                        </p>
+                        <h3>Web Development</h3>
+                        <p>Personal experiments using HTML, CSS, and JavaScript.</p>
                     </div>
-
-                    <span class="project-tag">WEB DESIGN</span>
-
+                    <span>WEB</span>
                 </div>
 
             </div>
@@ -139,82 +239,104 @@
 
 
         <!-- ABOUT SECTION -->
-        <section id="about">
+        <section class="section about-section" id="about">
 
             <div class="container">
 
-                <div class="section-number">
-                    02 / INTRODUCTION
+                <div class="section-top">
+
+                    <span class="section-label">
+                        02 / INTRODUCTION
+                    </span>
+
+                    <span class="section-caption">
+                        A LITTLE ABOUT ME
+                    </span>
+
                 </div>
 
                 <h2 class="section-title">
-                    About Me
+                    Beyond the <span>Code.</span>
                 </h2>
 
-                <p class="about-text">
-                    Hello! I'm Terrence Ross E. Samson, an
-                    Information Technology student interested
-                    in learning programming and understanding
-                    how technology works.
 
-                    I enjoy exploring new ideas, developing
-                    my technical skills, and working on projects
-                    that help me grow as a future IT professional.
-                </p>
+                <div class="about-grid">
+
+                    <div class="about-side">
+
+                        <div class="about-monogram">
+                            TS<span>.</span>
+                        </div>
+
+                        <span>STUDENT / CREATOR</span>
+
+                    </div>
 
 
-                <!-- EDUCATION -->
-                <div class="education">
+                    <div class="about-content">
 
-                    <small>EDUCATION</small>
+                        <p class="about-intro">
+                            Hello! I'm <span>Terrence Ross E. Samson</span>,
+                            an Information Technology student
+                            interested in programming, technology,
+                            and digital creativity.
+                        </p>
 
-                    <h3>
-                        Bachelor of Science in Information Technology
-                    </h3>
+                        <p>
+                            I enjoy learning new things, exploring
+                            different technologies, and developing
+                            my technical skills through hands-on
+                            projects and activities.
+                        </p>
 
-                    <p>
-                        BSIT · CURRENTLY STUDYING
-                    </p>
+                        <p>
+                            My goal is to continuously improve,
+                            gain experience, and grow into a
+                            knowledgeable IT professional.
+                        </p>
+
+
+                        <!-- EDUCATION -->
+                        <div class="education">
+
+                            <span class="small-label">
+                                EDUCATION
+                            </span>
+
+                            <h3>
+                                Bachelor of Science in
+                                Information Technology
+                            </h3>
+
+                            <p>
+                                BSIT · CURRENTLY STUDYING
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
                 <!-- SKILLS -->
-                <h3 style="margin-bottom: 20px;">
-                    My Toolkit
-                </h3>
+                <div class="skills-section">
 
-                <div class="skills">
+                    <span class="small-label">
+                        03 / MY TOOLKIT
+                    </span>
 
-                    <div class="skill-box">
+                    <h3>Skills & Technologies</h3>
 
-                        <h3>PROGRAMMING</h3>
+                    <div class="skills">
 
-                        <p>
-                            Java, HTML, CSS, JavaScript
-                        </p>
-
-                    </div>
-
-
-                    <div class="skill-box">
-
-                        <h3>TECHNOLOGY</h3>
-
-                        <p>
-                            Computer Fundamentals, Problem Solving
-                        </p>
-
-                    </div>
-
-
-                    <div class="skill-box">
-
-                        <h3>CREATIVE</h3>
-
-                        <p>
-                            Design, Visual Creativity, Digital Tools
-                        </p>
+                        <span>Java</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Problem Solving</span>
+                        <span>Computer Fundamentals</span>
+                        <span>Creative Design</span>
 
                     </div>
 
@@ -226,53 +348,59 @@
 
 
         <!-- CONTACT SECTION -->
-        <section id="contact">
+        <section class="section contact-section container" id="contact">
 
-            <div class="container">
+            <div class="section-top">
 
-                <div class="section-number">
-                    03 / GET IN TOUCH
-                </div>
+                <span class="section-label">
+                    04 / GET IN TOUCH
+                </span>
 
-                <h2 class="section-title">
-                    Let's Connect.
-                </h2>
+                <span class="section-caption">
+                    LET'S CONNECT
+                </span>
 
-                <p class="contact-text">
-                    Have a project idea, want to collaborate,
-                    or simply want to connect? Feel free to
-                    reach out. I'd be happy to hear from you.
-                </p>
+            </div>
+
+            <h2>
+                Let's create<br>
+                something <span>great.</span>
+            </h2>
+
+            <p>
+                Have a project idea, want to collaborate,
+                or simply want to connect? Feel free to
+                reach out. I'd be happy to hear from you.
+            </p>
+
+            <a href="mailto:YOUR-EMAIL@example.com"
+               class="contact-button">
+
+                Send Me an Email <span>↗</span>
+
+            </a>
 
 
-                <!-- EMAIL -->
-                <a href="mailto:YOUR-EMAIL@example.com"
-                   class="contact-link">
+            <!-- SOCIAL LINKS -->
+            <div class="socials">
 
-                    Send me an email ↗
-
+                <a href="https://github.com/terrencesamson"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub ↗
                 </a>
 
+                <a href="https://instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
 
-                <!-- SOCIAL MEDIA -->
-                <div class="socials">
-
-                    <a href="https://github.com/"
-                       target="_blank">
-                        GitHub ↗
-                    </a>
-
-                    <a href="https://instagram.com/"
-                       target="_blank">
-                        Instagram ↗
-                    </a>
-
-                    <a href="https://facebook.com/"
-                       target="_blank">
-                        Facebook ↗
-                    </a>
-
-                </div>
+                <a href="https://facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
 
             </div>
 
@@ -282,22 +410,22 @@
 
 
     <!-- FOOTER -->
-    <div class="container">
+    <footer>
 
-        <footer>
+        <div class="container footer-content">
 
             <span>© 2026 TERRENCE SAMSON</span>
 
-            <span>
-                DESIGNED & BUILT WITH HTML + CSS
-            </span>
+            <span>DESIGNED WITH PURPOSE.</span>
 
-        </footer>
+            <a href="#home">BACK TO TOP ↑</a>
 
-    </div>
+        </div>
+
+    </footer>
 
 
-    <!-- External JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
